@@ -28,24 +28,32 @@
   <div class="navbar-dark text-white">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <img src="images/hack.png" alt="HACK" class="navbar-gif">
+        <img src="images/hack.png" alt="HACKER" class="navbar-gif">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a href="#" class="p-3 text-decoration-none text-light">About Me</a>
-            <a href="#experience" class="p-3 text-decoration-none text-light">Experience</a>
-            <a href="#projects" class="p-3 text-decoration-none text-light">Projects</a>
+            <a href="#" class="p-3 text-decoration-none text-white">About Me</a>
+            <a href="#experience" class="p-3 text-decoration-none text-white">Experience</a>
+            <a href="#projects" class="p-3 text-decoration-none text-white">Projects</a>
+            <div class="navbar-right-content align-items-center">
+              <div class="ht-tm-element btn-group">
+                <button type="button" class="btn btn-outline-info btn-shadow dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Contact Me
+                </button>
+                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; transform: translate3d(0px, 38px, 0px);">
+                  <div class="dropdown-item text-mono text-info"><i class="fas fa-envelope"></i> moizskapasi@gmail.com</div>
+                  <div class="dropdown-item text-mono text-info"><i class="fas fa-phone"></i> +1(585)290-1817</div>
+                  <a href="https://github.com/moizskapasi" class="dropdown-item text-mono text-info" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                  <a href="https://www.linkedin.com/in/moizskapasi28/" class="dropdown-item text-mono text-info" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- <span class="ht-tm-element hal-9000 mx-auto"></span> -->
-        <div class="navbar-right-content align-items-center">
-          <div class="contact-info text-white ml-3">
-            <div class="text-mono text-info"><i class="fas fa-envelope"></i> moizskapasi@gmail.com</div>
-            <div class="text-mono text-info"><i class="fas fa-phone"></i> +1 (585) 290-1817</div>
-          </div>
-        </div>
+        
       </nav>
 
     </div>
@@ -115,42 +123,50 @@
 </div>
 
 <div class="container" id="projects">
-  <div class="row">
-    <div class="col-xl-12">
-      <h3 class="display-4">Projects</h1>
-          <div class="exp">
-            <p class="mt-5 text-mono text-primary">Web Application Security Audit</p>
-            <tr><p class="mb-3 text-grey text-spacey">_ Recreated the client's web application using their source code to build a local version of the application, so as not to
-              interfere with the production server.</p></tr>
-            <tr><p class="mb-3 text-grey text-spacey">_ Determined the use and level of OWASP Application Security Verification Standard used to create a checklist that aided
-              in testing the application.
-              </p></tr>
-            <tr><p class="mb-3 text-grey text-spacey">_ Assessed the application using the ASVS checklist to help bring the web application's security up to industry standards.</p></tr>
-          </div>
-          <div class="exp">
-            <p class="mt-5 text-mono text-primary">Persistent Shell</p>
-            <tr><p class="mb-3 text-grey text-spacey">_ Coded a malware backdoor that would propagate and persist on a Linux system using Bash.</p></tr>
-            <tr><p class="mb-3 text-grey text-spacey">_ Maintained persistence on 3 Linux servers using the malware in a Red vs Blue Competition.</p></tr>
-          </div>
-          <div class="exp">
-            <p class="mt-5 text-mono text-primary">Competition Environment using Ansible DevOps</p>
-            <tr><p class="mb-3 text-grey text-spacey">_ Utilized OpenStack to deploy 10 VMs including Windows Server 2019, Windows 10, and Ubuntu 22.</p></tr>
-            <tr><p class="mb-3 text-grey text-spacey">_ Built and connected the network environment using Ansible for the Red vs Blue competition.</p></tr>
-            <tr><p class="mb-3 text-grey text-spacey">_ Configured services like Active Directory, Apache2, MySQL and Postfix to simulate a corporate environment.</p></tr>
-          </div>    
+  <h3 class="display-4">Projects</h1>
 
-      <!-- <div class="text-darkgrey text-mono my-2">Some muted text</div> -->
+  <div class="row align-items-center mt-5">
+    <div class="col-lg-3">
+      <!-- Project buttons -->
+      <div class="nav flex-column nav-pills mb-3" id="project-list" role="tablist" aria-orientation="vertical">
+        <a class="nav-link btn btn-outline-primary btn-shadow my-3 active" id="proj1-tab" data-toggle="pill" href="#proj1" role="tab" aria-controls="proj1" aria-selected="true">Web Application Security Audit</a>
+        <a class="nav-link btn btn-outline-primary btn-shadow my-3" id="proj2-tab" data-toggle="pill" href="#proj2" role="tab" aria-controls="proj2" aria-selected="false">Persistent Shell</a>
+        <a class="nav-link btn btn-outline-primary btn-shadow my-3" id="proj3-tab" data-toggle="pill" href="#proj3" role="tab" aria-controls="proj3" aria-selected="false">Competition Environment using Ansible DevOps</a>
+      </div>
     </div>
-
+    <div class="col-lg-9">
+      <!-- Project details -->
+      <div class="tab-content" id="project-content">
+        <div class="tab-pane fade exp show active" id="proj1" role="tabpanel" aria-labelledby="proj1-tab">
+          <p class="mtext-mono text-primary">Web Application Security Audit</p>
+          <tr><p class="mb-3 text-grey text-spacey">_ Recreated the client's web application using their source code to build a local version of the application, so as not to
+            interfere with the production server.</p></tr>
+          <tr><p class="mb-3 text-grey text-spacey">_ Determined the use and level of OWASP Application Security Verification Standard used to create a checklist that aided
+            in testing the application.
+            </p></tr>
+          <tr><p class="mb-3 text-grey text-spacey">_ Assessed the application using the ASVS checklist to help bring the web application's security up to industry standards.</p></tr>
+      </div>
+        <div class="tab-pane fade exp" id="proj2" role="tabpanel" aria-labelledby="proj2-tab">
+          <a href="https://github.com/moizskapasi/Red-Teaming/tree/main/Persistent-Shell" class="text-mono text-primary">Persistent Shell <i class="fas fa-link"></i></a>
+          <tr><p class="mb-3 text-grey text-spacey">_ Coded a malware backdoor that would propagate and persist on a Linux system using Bash.</p></tr>
+          <tr><p class="mb-3 text-grey text-spacey">_ Maintained persistence on 3 Linux servers using the malware in a Red vs Blue Competition.</p></tr>
+      </div>
+        <div class="tab-pane fade exp" id="proj3" role="tabpanel" aria-labelledby="proj3-tab">
+          <p class="text-mono text-primary">Competition Environment using Ansible DevOps</p>
+          <tr><p class="mb-3 text-grey text-spacey">_ Utilized OpenStack to deploy 10 VMs including Windows Server 2019, Windows 10, and Ubuntu 22.</p></tr>
+          <tr><p class="mb-3 text-grey text-spacey">_ Built and connected the network environment using Ansible for the Red vs Blue competition.</p></tr>
+          <tr><p class="mb-3 text-grey text-spacey">_ Configured services like Active Directory, Apache2, MySQL and Postfix to simulate a corporate environment.</p></tr>
+      </div>
+      </div>
+    </div>
   </div>
 </div>
+
 
 <footer class="text-center mt-5">
     <div class="container">
       <p class="text-muted">© 2024 Moiz Kapasi</p>
       <p class="text-muted">
-        <a href="https://github.com/moizskapasi" class="text-muted" target="_blank"><i class="fab fa-github"></i> GitHub</a>    |   
-        <a href="https://www.linkedin.com/in/moizskapasi28/" class="text-muted" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
       </p>
     </div>
   </footer>
@@ -180,7 +196,27 @@
       }, 1500); // Adjust spinner display duration as needed
     };
   </script>
-  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  // Select all nav links
+  const navLinks = document.querySelectorAll('.nav-pills .nav-link');
+
+  // Add click event listener to each link
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      // Get the target tab-pane
+      const targetId = link.getAttribute('href');
+      const targetPane = document.querySelector(targetId);
+
+      // Add a small delay before showing the new tab-pane to ensure fade-out completes
+      setTimeout(function() {
+        targetPane.classList.add('show', 'active');
+      }, 150);
+    });
+  });
+});
+
+  </script>
   
 
     <!-- Optional JavaScript -->

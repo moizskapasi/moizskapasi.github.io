@@ -72,15 +72,24 @@ html {
     align-items: center;
   }
   
-  .contact-info a {
-    font-size: 20px; /* Adjust icon size */
-    text-decoration: none;
-  }
-  
-  .contact-info a:hover {
-    color: #aaa; /* Optional: Add hover effect */
-  }
-
   .exp .text-grey {
     padding-left: 20px;
   }
+
+  .nav-pills {
+    margin-bottom: auto;
+  }
+
+  .tab-content .tab-pane {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.12s ease-in-out, visibility 0.12s ease-in-out;
+  }
+  
+  .tab-content .tab-pane.show.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+
+  
