@@ -28,7 +28,7 @@
   <div class="navbar-dark text-white">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <img src="images/hack.png" alt="HACKER" class="navbar-gif">
+        <a href="#"><img src="images/hack.png" alt="HACKER" class="navbar-gif"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,23 +37,23 @@
             <a href="#" class="p-3 text-decoration-none text-white">About Me</a>
             <a href="#experience" class="p-3 text-decoration-none text-white">Experience</a>
             <a href="#projects" class="p-3 text-decoration-none text-white">Projects</a>
-            <div class="navbar-right-content align-items-center">
-              <div class="ht-tm-element btn-group">
-                <button type="button" class="btn btn-outline-info btn-shadow dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Contact Me
-                </button>
-                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; transform: translate3d(0px, 38px, 0px);">
-                  <div class="dropdown-item text-mono text-info"><i class="fas fa-envelope"></i> moizskapasi@gmail.com</div>
-                  <div class="dropdown-item text-mono text-info"><i class="fas fa-phone"></i> +1(585)290-1817</div>
-                  <a href="https://github.com/moizskapasi" class="dropdown-item text-mono text-info" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                  <a href="https://www.linkedin.com/in/moizskapasi28/" class="dropdown-item text-mono text-info" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                </div>
+            <div class="ht-tm-element btn-group">
+              <button type="button" class="btn btn-outline-info btn-shadow dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contact Me
+              </button>
+              <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; transform: translate3d(0px, 56px, 0px);">
+                <div class="dropdown-item text-mono text-info"><i class="fas fa-envelope"></i> moizskapasi@gmail.com</div>
+                <div class="dropdown-item text-mono text-info"><i class="fas fa-phone"></i> +1(585)290-1817</div>
+                <a href="https://github.com/moizskapasi" class="dropdown-item text-mono text-info" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/moizskapasi28/" class="dropdown-item text-mono text-info" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
               </div>
             </div>
           </div>
         </div>
         <!-- <span class="ht-tm-element hal-9000 mx-auto"></span> -->
-        
+        <div class="navbar-right-content align-items-center">
+        </div>
+
       </nav>
 
     </div>
@@ -125,7 +125,7 @@
 <div class="container" id="projects">
   <h3 class="display-4">Projects</h1>
 
-  <div class="row align-items-center mt-5">
+  <div class="row  mt-5">
     <div class="col-lg-3">
       <!-- Project buttons -->
       <div class="nav flex-column nav-pills mb-3" id="project-list" role="tablist" aria-orientation="vertical">
@@ -136,7 +136,7 @@
     </div>
     <div class="col-lg-9">
       <!-- Project details -->
-      <div class="tab-content" id="project-content">
+      <div class="tab-content mt-3 mx-3" id="project-content">
         <div class="tab-pane fade exp show active" id="proj1" role="tabpanel" aria-labelledby="proj1-tab">
           <p class="mtext-mono text-primary">Web Application Security Audit</p>
           <tr><p class="mb-3 text-grey text-spacey">_ Recreated the client's web application using their source code to build a local version of the application, so as not to
@@ -145,18 +145,18 @@
             in testing the application.
             </p></tr>
           <tr><p class="mb-3 text-grey text-spacey">_ Assessed the application using the ASVS checklist to help bring the web application's security up to industry standards.</p></tr>
-      </div>
+        </div>
         <div class="tab-pane fade exp" id="proj2" role="tabpanel" aria-labelledby="proj2-tab">
           <a href="https://github.com/moizskapasi/Red-Teaming/tree/main/Persistent-Shell" class="text-mono text-primary">Persistent Shell <i class="fas fa-link"></i></a>
           <tr><p class="mb-3 text-grey text-spacey">_ Coded a malware backdoor that would propagate and persist on a Linux system using Bash.</p></tr>
           <tr><p class="mb-3 text-grey text-spacey">_ Maintained persistence on 3 Linux servers using the malware in a Red vs Blue Competition.</p></tr>
-      </div>
+        </div>
         <div class="tab-pane fade exp" id="proj3" role="tabpanel" aria-labelledby="proj3-tab">
           <p class="text-mono text-primary">Competition Environment using Ansible DevOps</p>
           <tr><p class="mb-3 text-grey text-spacey">_ Utilized OpenStack to deploy 10 VMs including Windows Server 2019, Windows 10, and Ubuntu 22.</p></tr>
           <tr><p class="mb-3 text-grey text-spacey">_ Built and connected the network environment using Ansible for the Red vs Blue competition.</p></tr>
           <tr><p class="mb-3 text-grey text-spacey">_ Configured services like Active Directory, Apache2, MySQL and Postfix to simulate a corporate environment.</p></tr>
-      </div>
+        </div>
       </div>
     </div>
   </div>
@@ -165,9 +165,14 @@
 
 <footer class="text-center mt-5">
     <div class="container">
+      <div class="row htbuserbadge">
+        <span class="col-12 p-0"><script src="https://www.hackthebox.eu/badge/402673"></script></span>
+      </div>
+      <div class="row thmuserbadge">
+        <span class="col-12 p-0"><script src="https://tryhackme.com/badge/221981"></script></span>  
+      </div>
+
       <p class="text-muted">© 2024 Moiz Kapasi</p>
-      <p class="text-muted">
-      </p>
     </div>
   </footer>
 
